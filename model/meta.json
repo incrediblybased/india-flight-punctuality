@@ -1,0 +1,1697 @@
+{
+ "results": {
+  "LightGBM": {
+   "mae": 8.861599428890258,
+   "rmse": 12.254252672714854,
+   "within5": 0.39490445859872614,
+   "n": 314
+  },
+  "Last reported value": {
+   "mae": 9.17680467091295,
+   "rmse": 12.486551789179595,
+   "within5": 0.36942675159235666,
+   "n": 314
+  },
+  "Airline average": {
+   "mae": 11.995467159417327,
+   "rmse": 17.74288479004762,
+   "within5": 0.3980891719745223,
+   "n": 314
+  }
+ },
+ "by_period": {
+  "Apr to Sep 2023": {
+   "LightGBM": 6.250415867981214,
+   "Last reported value": 6.5636363636363635,
+   "Airline average": 9.778798918327663
+  },
+  "2025 and 2026": {
+   "LightGBM": 12.19180455004962,
+   "Last reported value": 12.509541062801931,
+   "Airline average": 14.822522307473712
+  }
+ },
+ "trees": 50,
+ "features": [
+  "airline",
+  "airport",
+  "cal_month",
+  "months_since_2021",
+  "last_otp",
+  "months_since_last",
+  "airline_last_mean",
+  "airport_last_mean",
+  "rain_mm",
+  "rainy_days",
+  "heavy_rain_days",
+  "thunder_days",
+  "gusty_days",
+  "max_temp",
+  "min_temp",
+  "fog_risk_hours"
+ ],
+ "categorical": [
+  "airline",
+  "airport"
+ ],
+ "categories": {
+  "airline": [
+   "Air India",
+   "AirAsia India",
+   "Akasa Air",
+   "Alliance Air",
+   "Go First",
+   "IndiGo",
+   "SpiceJet",
+   "Vistara"
+  ],
+  "airport": [
+   "AMD",
+   "BLR",
+   "BOM",
+   "CCU",
+   "COK",
+   "DEL",
+   "GAU",
+   "HYD",
+   "LKO",
+   "MAA"
+  ]
+ },
+ "months": [
+  "2021-03",
+  "2021-04",
+  "2021-05",
+  "2021-06",
+  "2021-07",
+  "2021-08",
+  "2021-09",
+  "2021-10",
+  "2021-11",
+  "2021-12",
+  "2022-01",
+  "2022-02",
+  "2022-03",
+  "2022-04",
+  "2022-05",
+  "2022-06",
+  "2022-07",
+  "2022-08",
+  "2022-09",
+  "2022-10",
+  "2022-11",
+  "2022-12",
+  "2023-01",
+  "2023-02",
+  "2023-03",
+  "2023-04",
+  "2023-05",
+  "2023-06",
+  "2023-07",
+  "2023-08",
+  "2023-09",
+  "2025-05",
+  "2025-10",
+  "2025-11",
+  "2026-04"
+ ],
+ "test_from": "2023-04",
+ "n_rows": 993,
+ "n_train": 679,
+ "n_test": 314,
+ "importance": {
+  "airline": 116.88515090942383,
+  "airport": 8.351090431213379,
+  "cal_month": 757.3930892944336,
+  "months_since_2021": 442.9066376686096,
+  "last_otp": 840.8789014816284,
+  "months_since_last": 10.345000267028809,
+  "airline_last_mean": 137.98148202896118,
+  "airport_last_mean": 183.83087158203125,
+  "rain_mm": 50.465200424194336,
+  "rainy_days": 31.506699562072754,
+  "heavy_rain_days": 0.0,
+  "thunder_days": 0.0,
+  "gusty_days": 58.03748035430908,
+  "max_temp": 0.0,
+  "min_temp": 83.11348915100098,
+  "fog_risk_hours": 11.339099884033203
+ },
+ "reasons": [
+  {
+   "month": "2021-03",
+   "reason": "Airport",
+   "share": 5.0
+  },
+  {
+   "month": "2021-03",
+   "reason": "Weather",
+   "share": 4.0
+  },
+  {
+   "month": "2021-03",
+   "reason": "Air traffic control",
+   "share": 3.0
+  },
+  {
+   "month": "2021-03",
+   "reason": "Miscellaneous",
+   "share": 2.0
+  },
+  {
+   "month": "2021-03",
+   "reason": "Reactionary (late incoming aircraft)",
+   "share": 70.0
+  },
+  {
+   "month": "2021-03",
+   "reason": "Passenger",
+   "share": 5.0
+  },
+  {
+   "month": "2021-03",
+   "reason": "Ramp",
+   "share": 1.0
+  },
+  {
+   "month": "2021-03",
+   "reason": "Technical",
+   "share": 7.0
+  },
+  {
+   "month": "2021-03",
+   "reason": "Operations",
+   "share": 4.0
+  },
+  {
+   "month": "2021-04",
+   "reason": "Airport",
+   "share": 8.0
+  },
+  {
+   "month": "2021-04",
+   "reason": "Weather",
+   "share": 1.0
+  },
+  {
+   "month": "2021-04",
+   "reason": "Air traffic control",
+   "share": 3.0
+  },
+  {
+   "month": "2021-04",
+   "reason": "Miscellaneous",
+   "share": 3.0
+  },
+  {
+   "month": "2021-04",
+   "reason": "Passenger",
+   "share": 5.0
+  },
+  {
+   "month": "2021-04",
+   "reason": "Reactionary (late incoming aircraft)",
+   "share": 66.0
+  },
+  {
+   "month": "2021-04",
+   "reason": "Ramp",
+   "share": 2.0
+  },
+  {
+   "month": "2021-04",
+   "reason": "Technical",
+   "share": 7.0
+  },
+  {
+   "month": "2021-04",
+   "reason": "Operations",
+   "share": 5.0
+  },
+  {
+   "month": "2021-05",
+   "reason": "Airport",
+   "share": 16.0
+  },
+  {
+   "month": "2021-05",
+   "reason": "Weather",
+   "share": 5.0
+  },
+  {
+   "month": "2021-05",
+   "reason": "Air traffic control",
+   "share": 7.0
+  },
+  {
+   "month": "2021-05",
+   "reason": "Miscellaneous",
+   "share": 1.0
+  },
+  {
+   "month": "2021-05",
+   "reason": "Passenger",
+   "share": 3.0
+  },
+  {
+   "month": "2021-05",
+   "reason": "Reactionary (late incoming aircraft)",
+   "share": 45.0
+  },
+  {
+   "month": "2021-05",
+   "reason": "Ramp",
+   "share": 2.0
+  },
+  {
+   "month": "2021-05",
+   "reason": "Technical",
+   "share": 14.0
+  },
+  {
+   "month": "2021-05",
+   "reason": "Operations",
+   "share": 7.0
+  },
+  {
+   "month": "2021-06",
+   "reason": "Airport",
+   "share": 4.0
+  },
+  {
+   "month": "2021-06",
+   "reason": "Weather",
+   "share": 6.0
+  },
+  {
+   "month": "2021-06",
+   "reason": "Air traffic control",
+   "share": 7.0
+  },
+  {
+   "month": "2021-06",
+   "reason": "Miscellaneous",
+   "share": 5.0
+  },
+  {
+   "month": "2021-06",
+   "reason": "Passenger",
+   "share": 5.0
+  },
+  {
+   "month": "2021-06",
+   "reason": "Reactionary (late incoming aircraft)",
+   "share": 55.0
+  },
+  {
+   "month": "2021-06",
+   "reason": "Ramp",
+   "share": 2.0
+  },
+  {
+   "month": "2021-06",
+   "reason": "Technical",
+   "share": 8.0
+  },
+  {
+   "month": "2021-06",
+   "reason": "Operations",
+   "share": 8.0
+  },
+  {
+   "month": "2021-07",
+   "reason": "Weather",
+   "share": 11.0
+  },
+  {
+   "month": "2021-07",
+   "reason": "Air traffic control",
+   "share": 8.0
+  },
+  {
+   "month": "2021-07",
+   "reason": "Miscellaneous",
+   "share": 1.0
+  },
+  {
+   "month": "2021-07",
+   "reason": "Passenger",
+   "share": 3.0
+  },
+  {
+   "month": "2021-07",
+   "reason": "Ramp",
+   "share": 1.0
+  },
+  {
+   "month": "2021-07",
+   "reason": "Reactionary (late incoming aircraft)",
+   "share": 47.0
+  },
+  {
+   "month": "2021-07",
+   "reason": "Technical",
+   "share": 9.0
+  },
+  {
+   "month": "2021-07",
+   "reason": "Operations",
+   "share": 12.0
+  },
+  {
+   "month": "2021-08",
+   "reason": "Weather",
+   "share": 4.0
+  },
+  {
+   "month": "2021-08",
+   "reason": "Air traffic control",
+   "share": 8.0
+  },
+  {
+   "month": "2021-08",
+   "reason": "Reactionary (late incoming aircraft)",
+   "share": 50.0
+  },
+  {
+   "month": "2021-08",
+   "reason": "Miscellaneous",
+   "share": 1.0
+  },
+  {
+   "month": "2021-08",
+   "reason": "Passenger",
+   "share": 7.0
+  },
+  {
+   "month": "2021-08",
+   "reason": "Ramp",
+   "share": 2.0
+  },
+  {
+   "month": "2021-08",
+   "reason": "Technical",
+   "share": 9.0
+  },
+  {
+   "month": "2021-08",
+   "reason": "Operations",
+   "share": 12.0
+  },
+  {
+   "month": "2021-09",
+   "reason": "Airport",
+   "share": 4.0
+  },
+  {
+   "month": "2021-09",
+   "reason": "Weather",
+   "share": 6.0
+  },
+  {
+   "month": "2021-09",
+   "reason": "Air traffic control",
+   "share": 3.0
+  },
+  {
+   "month": "2021-09",
+   "reason": "Miscellaneous",
+   "share": 1.0
+  },
+  {
+   "month": "2021-09",
+   "reason": "Reactionary (late incoming aircraft)",
+   "share": 66.0
+  },
+  {
+   "month": "2021-09",
+   "reason": "Passenger",
+   "share": 5.0
+  },
+  {
+   "month": "2021-09",
+   "reason": "Ramp",
+   "share": 2.0
+  },
+  {
+   "month": "2021-09",
+   "reason": "Technical",
+   "share": 7.0
+  },
+  {
+   "month": "2021-09",
+   "reason": "Operations",
+   "share": 6.0
+  },
+  {
+   "month": "2021-10",
+   "reason": "Airport",
+   "share": 6.0
+  },
+  {
+   "month": "2021-10",
+   "reason": "Weather",
+   "share": 2.0
+  },
+  {
+   "month": "2021-10",
+   "reason": "Air traffic control",
+   "share": 7.0
+  },
+  {
+   "month": "2021-10",
+   "reason": "Miscellaneous",
+   "share": 1.0
+  },
+  {
+   "month": "2021-10",
+   "reason": "Passenger",
+   "share": 5.0
+  },
+  {
+   "month": "2021-10",
+   "reason": "Reactionary (late incoming aircraft)",
+   "share": 67.0
+  },
+  {
+   "month": "2021-10",
+   "reason": "Ramp",
+   "share": 2.0
+  },
+  {
+   "month": "2021-10",
+   "reason": "Technical",
+   "share": 4.0
+  },
+  {
+   "month": "2021-10",
+   "reason": "Operations",
+   "share": 6.0
+  },
+  {
+   "month": "2021-11",
+   "reason": "Airport",
+   "share": 3.0
+  },
+  {
+   "month": "2021-11",
+   "reason": "Weather",
+   "share": 1.0
+  },
+  {
+   "month": "2021-11",
+   "reason": "Air traffic control",
+   "share": 7.0
+  },
+  {
+   "month": "2021-11",
+   "reason": "Miscellaneous",
+   "share": 1.0
+  },
+  {
+   "month": "2021-11",
+   "reason": "Passenger",
+   "share": 5.0
+  },
+  {
+   "month": "2021-11",
+   "reason": "Reactionary (late incoming aircraft)",
+   "share": 72.0
+  },
+  {
+   "month": "2021-11",
+   "reason": "Ramp",
+   "share": 2.0
+  },
+  {
+   "month": "2021-11",
+   "reason": "Technical",
+   "share": 3.0
+  },
+  {
+   "month": "2021-11",
+   "reason": "Operations",
+   "share": 6.0
+  },
+  {
+   "month": "2021-12",
+   "reason": "Airport",
+   "share": 3.0
+  },
+  {
+   "month": "2021-12",
+   "reason": "Air traffic control",
+   "share": 11.0
+  },
+  {
+   "month": "2021-12",
+   "reason": "Miscellaneous",
+   "share": 0.0
+  },
+  {
+   "month": "2021-12",
+   "reason": "Passenger",
+   "share": 3.0
+  },
+  {
+   "month": "2021-12",
+   "reason": "Ramp",
+   "share": 1.0
+  },
+  {
+   "month": "2021-12",
+   "reason": "Technical",
+   "share": 3.0
+  },
+  {
+   "month": "2021-12",
+   "reason": "Reactionary (late incoming aircraft)",
+   "share": 69.0
+  },
+  {
+   "month": "2021-12",
+   "reason": "Operations",
+   "share": 5.0
+  },
+  {
+   "month": "2022-01",
+   "reason": "Airport",
+   "share": 2.0
+  },
+  {
+   "month": "2022-01",
+   "reason": "Weather",
+   "share": 12.0
+  },
+  {
+   "month": "2022-01",
+   "reason": "Air traffic control",
+   "share": 11.0
+  },
+  {
+   "month": "2022-01",
+   "reason": "Miscellaneous",
+   "share": 0.0
+  },
+  {
+   "month": "2022-01",
+   "reason": "Passenger",
+   "share": 3.0
+  },
+  {
+   "month": "2022-01",
+   "reason": "Ramp",
+   "share": 1.0
+  },
+  {
+   "month": "2022-01",
+   "reason": "Technical",
+   "share": 4.0
+  },
+  {
+   "month": "2022-01",
+   "reason": "Reactionary (late incoming aircraft)",
+   "share": 58.0
+  },
+  {
+   "month": "2022-01",
+   "reason": "Operations",
+   "share": 9.0
+  },
+  {
+   "month": "2022-02",
+   "reason": "Airport",
+   "share": 11.0
+  },
+  {
+   "month": "2022-02",
+   "reason": "Weather",
+   "share": 4.0
+  },
+  {
+   "month": "2022-02",
+   "reason": "Air traffic control",
+   "share": 9.0
+  },
+  {
+   "month": "2022-02",
+   "reason": "Miscellaneous",
+   "share": 0.0
+  },
+  {
+   "month": "2022-02",
+   "reason": "Passenger",
+   "share": 4.0
+  },
+  {
+   "month": "2022-02",
+   "reason": "Reactionary (late incoming aircraft)",
+   "share": 58.0
+  },
+  {
+   "month": "2022-02",
+   "reason": "Ramp",
+   "share": 1.0
+  },
+  {
+   "month": "2022-02",
+   "reason": "Technical",
+   "share": 6.0
+  },
+  {
+   "month": "2022-02",
+   "reason": "Operations",
+   "share": 7.0
+  },
+  {
+   "month": "2022-03",
+   "reason": "Airport",
+   "share": 4.0
+  },
+  {
+   "month": "2022-03",
+   "reason": "Weather",
+   "share": 2.0
+  },
+  {
+   "month": "2022-03",
+   "reason": "Air traffic control",
+   "share": 9.0
+  },
+  {
+   "month": "2022-03",
+   "reason": "Miscellaneous",
+   "share": 2.0
+  },
+  {
+   "month": "2022-03",
+   "reason": "Passenger",
+   "share": 4.0
+  },
+  {
+   "month": "2022-03",
+   "reason": "Reactionary (late incoming aircraft)",
+   "share": 65.0
+  },
+  {
+   "month": "2022-03",
+   "reason": "Ramp",
+   "share": 2.0
+  },
+  {
+   "month": "2022-03",
+   "reason": "Technical",
+   "share": 5.0
+  },
+  {
+   "month": "2022-03",
+   "reason": "Operations",
+   "share": 7.0
+  },
+  {
+   "month": "2022-04",
+   "reason": "Airport",
+   "share": 3.0
+  },
+  {
+   "month": "2022-04",
+   "reason": "Weather",
+   "share": 2.0
+  },
+  {
+   "month": "2022-04",
+   "reason": "Air traffic control",
+   "share": 6.0
+  },
+  {
+   "month": "2022-04",
+   "reason": "Miscellaneous",
+   "share": 1.0
+  },
+  {
+   "month": "2022-04",
+   "reason": "Reactionary (late incoming aircraft)",
+   "share": 67.0
+  },
+  {
+   "month": "2022-04",
+   "reason": "Passenger",
+   "share": 5.0
+  },
+  {
+   "month": "2022-04",
+   "reason": "Ramp",
+   "share": 2.0
+  },
+  {
+   "month": "2022-04",
+   "reason": "Technical",
+   "share": 6.0
+  },
+  {
+   "month": "2022-04",
+   "reason": "Operations",
+   "share": 8.0
+  },
+  {
+   "month": "2022-05",
+   "reason": "Airport",
+   "share": 3.0
+  },
+  {
+   "month": "2022-05",
+   "reason": "Weather",
+   "share": 4.0
+  },
+  {
+   "month": "2022-05",
+   "reason": "Air traffic control",
+   "share": 6.0
+  },
+  {
+   "month": "2022-05",
+   "reason": "Miscellaneous",
+   "share": 1.0
+  },
+  {
+   "month": "2022-05",
+   "reason": "Passenger",
+   "share": 3.0
+  },
+  {
+   "month": "2022-05",
+   "reason": "Reactionary (late incoming aircraft)",
+   "share": 71.0
+  },
+  {
+   "month": "2022-05",
+   "reason": "Ramp",
+   "share": 1.0
+  },
+  {
+   "month": "2022-05",
+   "reason": "Technical",
+   "share": 6.0
+  },
+  {
+   "month": "2022-05",
+   "reason": "Operations",
+   "share": 5.0
+  },
+  {
+   "month": "2022-06",
+   "reason": "Airport",
+   "share": 2.0
+  },
+  {
+   "month": "2022-06",
+   "reason": "Weather",
+   "share": 3.0
+  },
+  {
+   "month": "2022-06",
+   "reason": "Air traffic control",
+   "share": 7.0
+  },
+  {
+   "month": "2022-06",
+   "reason": "Miscellaneous",
+   "share": 1.0
+  },
+  {
+   "month": "2022-06",
+   "reason": "Reactionary (late incoming aircraft)",
+   "share": 68.0
+  },
+  {
+   "month": "2022-06",
+   "reason": "Passenger",
+   "share": 4.0
+  },
+  {
+   "month": "2022-06",
+   "reason": "Ramp",
+   "share": 1.0
+  },
+  {
+   "month": "2022-06",
+   "reason": "Technical",
+   "share": 6.0
+  },
+  {
+   "month": "2022-06",
+   "reason": "Operations",
+   "share": 8.0
+  },
+  {
+   "month": "2022-07",
+   "reason": "Airport",
+   "share": 3.0
+  },
+  {
+   "month": "2022-07",
+   "reason": "Air traffic control",
+   "share": 7.0
+  },
+  {
+   "month": "2022-07",
+   "reason": "Miscellaneous",
+   "share": 0.0
+  },
+  {
+   "month": "2022-07",
+   "reason": "Reactionary (late incoming aircraft)",
+   "share": 65.0
+  },
+  {
+   "month": "2022-07",
+   "reason": "Passenger",
+   "share": 4.0
+  },
+  {
+   "month": "2022-07",
+   "reason": "Ramp",
+   "share": 1.0
+  },
+  {
+   "month": "2022-07",
+   "reason": "Technical",
+   "share": 6.0
+  },
+  {
+   "month": "2022-07",
+   "reason": "Operations",
+   "share": 9.0
+  },
+  {
+   "month": "2022-08",
+   "reason": "Airport",
+   "share": 2.0
+  },
+  {
+   "month": "2022-08",
+   "reason": "Weather",
+   "share": 4.0
+  },
+  {
+   "month": "2022-08",
+   "reason": "Air traffic control",
+   "share": 7.0
+  },
+  {
+   "month": "2022-08",
+   "reason": "Miscellaneous",
+   "share": 1.0
+  },
+  {
+   "month": "2022-08",
+   "reason": "Passenger",
+   "share": 3.0
+  },
+  {
+   "month": "2022-08",
+   "reason": "Reactionary (late incoming aircraft)",
+   "share": 68.0
+  },
+  {
+   "month": "2022-08",
+   "reason": "Ramp",
+   "share": 1.0
+  },
+  {
+   "month": "2022-08",
+   "reason": "Technical",
+   "share": 8.0
+  },
+  {
+   "month": "2022-08",
+   "reason": "Operations",
+   "share": 6.0
+  },
+  {
+   "month": "2022-09",
+   "reason": "Airport",
+   "share": 3.0
+  },
+  {
+   "month": "2022-09",
+   "reason": "Weather",
+   "share": 3.0
+  },
+  {
+   "month": "2022-09",
+   "reason": "Air traffic control",
+   "share": 8.0
+  },
+  {
+   "month": "2022-09",
+   "reason": "Miscellaneous",
+   "share": 1.0
+  },
+  {
+   "month": "2022-09",
+   "reason": "Passenger",
+   "share": 4.0
+  },
+  {
+   "month": "2022-09",
+   "reason": "Reactionary (late incoming aircraft)",
+   "share": 68.0
+  },
+  {
+   "month": "2022-09",
+   "reason": "Ramp",
+   "share": 1.0
+  },
+  {
+   "month": "2022-09",
+   "reason": "Technical",
+   "share": 6.0
+  },
+  {
+   "month": "2022-09",
+   "reason": "Operations",
+   "share": 6.0
+  },
+  {
+   "month": "2022-10",
+   "reason": "Airport",
+   "share": 2.0
+  },
+  {
+   "month": "2022-10",
+   "reason": "Weather",
+   "share": 3.0
+  },
+  {
+   "month": "2022-10",
+   "reason": "Air traffic control",
+   "share": 7.0
+  },
+  {
+   "month": "2022-10",
+   "reason": "Miscellaneous",
+   "share": 1.0
+  },
+  {
+   "month": "2022-10",
+   "reason": "Reactionary (late incoming aircraft)",
+   "share": 68.0
+  },
+  {
+   "month": "2022-10",
+   "reason": "Passenger",
+   "share": 4.0
+  },
+  {
+   "month": "2022-10",
+   "reason": "Ramp",
+   "share": 1.0
+  },
+  {
+   "month": "2022-10",
+   "reason": "Technical",
+   "share": 6.0
+  },
+  {
+   "month": "2022-10",
+   "reason": "Operations",
+   "share": 8.0
+  },
+  {
+   "month": "2022-11",
+   "reason": "Airport",
+   "share": 2.0
+  },
+  {
+   "month": "2022-11",
+   "reason": "Weather",
+   "share": 2.0
+  },
+  {
+   "month": "2022-11",
+   "reason": "Air traffic control",
+   "share": 7.0
+  },
+  {
+   "month": "2022-11",
+   "reason": "Miscellaneous",
+   "share": 1.0
+  },
+  {
+   "month": "2022-11",
+   "reason": "Reactionary (late incoming aircraft)",
+   "share": 70.0
+  },
+  {
+   "month": "2022-11",
+   "reason": "Passenger",
+   "share": 4.0
+  },
+  {
+   "month": "2022-11",
+   "reason": "Ramp",
+   "share": 1.0
+  },
+  {
+   "month": "2022-11",
+   "reason": "Technical",
+   "share": 5.0
+  },
+  {
+   "month": "2022-11",
+   "reason": "Operations",
+   "share": 8.0
+  },
+  {
+   "month": "2022-12",
+   "reason": "Airport",
+   "share": 3.0
+  },
+  {
+   "month": "2022-12",
+   "reason": "Weather",
+   "share": 4.0
+  },
+  {
+   "month": "2022-12",
+   "reason": "Air traffic control",
+   "share": 9.0
+  },
+  {
+   "month": "2022-12",
+   "reason": "Miscellaneous",
+   "share": 1.0
+  },
+  {
+   "month": "2022-12",
+   "reason": "Passenger",
+   "share": 3.0
+  },
+  {
+   "month": "2022-12",
+   "reason": "Reactionary (late incoming aircraft)",
+   "share": 68.0
+  },
+  {
+   "month": "2022-12",
+   "reason": "Ramp",
+   "share": 1.0
+  },
+  {
+   "month": "2022-12",
+   "reason": "Technical",
+   "share": 3.0
+  },
+  {
+   "month": "2022-12",
+   "reason": "Operations",
+   "share": 8.0
+  },
+  {
+   "month": "2023-01",
+   "reason": "Airport",
+   "share": 2.0
+  },
+  {
+   "month": "2023-01",
+   "reason": "Weather",
+   "share": 7.0
+  },
+  {
+   "month": "2023-01",
+   "reason": "Air traffic control",
+   "share": 11.0
+  },
+  {
+   "month": "2023-01",
+   "reason": "Miscellaneous",
+   "share": 1.0
+  },
+  {
+   "month": "2023-01",
+   "reason": "Passenger",
+   "share": 2.0
+  },
+  {
+   "month": "2023-01",
+   "reason": "Ramp",
+   "share": 1.0
+  },
+  {
+   "month": "2023-01",
+   "reason": "Technical",
+   "share": 2.0
+  },
+  {
+   "month": "2023-01",
+   "reason": "Reactionary (late incoming aircraft)",
+   "share": 67.0
+  },
+  {
+   "month": "2023-01",
+   "reason": "Operations",
+   "share": 7.0
+  },
+  {
+   "month": "2023-02",
+   "reason": "Airport",
+   "share": 3.0
+  },
+  {
+   "month": "2023-02",
+   "reason": "Weather",
+   "share": 3.0
+  },
+  {
+   "month": "2023-02",
+   "reason": "Air traffic control",
+   "share": 9.0
+  },
+  {
+   "month": "2023-02",
+   "reason": "Miscellaneous",
+   "share": 1.0
+  },
+  {
+   "month": "2023-02",
+   "reason": "Passenger",
+   "share": 2.0
+  },
+  {
+   "month": "2023-02",
+   "reason": "Ramp",
+   "share": 2.0
+  },
+  {
+   "month": "2023-02",
+   "reason": "Reactionary (late incoming aircraft)",
+   "share": 69.0
+  },
+  {
+   "month": "2023-02",
+   "reason": "Technical",
+   "share": 3.0
+  },
+  {
+   "month": "2023-02",
+   "reason": "Operations",
+   "share": 8.0
+  },
+  {
+   "month": "2023-03",
+   "reason": "Airport",
+   "share": 3.0
+  },
+  {
+   "month": "2023-03",
+   "reason": "Weather",
+   "share": 2.0
+  },
+  {
+   "month": "2023-03",
+   "reason": "Air traffic control",
+   "share": 7.0
+  },
+  {
+   "month": "2023-03",
+   "reason": "Miscellaneous",
+   "share": 0.0
+  },
+  {
+   "month": "2023-03",
+   "reason": "Passenger",
+   "share": 3.0
+  },
+  {
+   "month": "2023-03",
+   "reason": "Reactionary (late incoming aircraft)",
+   "share": 72.0
+  },
+  {
+   "month": "2023-03",
+   "reason": "Ramp",
+   "share": 1.0
+  },
+  {
+   "month": "2023-03",
+   "reason": "Technical",
+   "share": 5.0
+  },
+  {
+   "month": "2023-03",
+   "reason": "Operations",
+   "share": 7.0
+  },
+  {
+   "month": "2023-04",
+   "reason": "Airport",
+   "share": 2.0
+  },
+  {
+   "month": "2023-04",
+   "reason": "Weather",
+   "share": 2.0
+  },
+  {
+   "month": "2023-04",
+   "reason": "Air traffic control",
+   "share": 6.0
+  },
+  {
+   "month": "2023-04",
+   "reason": "Miscellaneous",
+   "share": 0.0
+  },
+  {
+   "month": "2023-04",
+   "reason": "Reactionary (late incoming aircraft)",
+   "share": 74.0
+  },
+  {
+   "month": "2023-04",
+   "reason": "Passenger",
+   "share": 3.0
+  },
+  {
+   "month": "2023-04",
+   "reason": "Ramp",
+   "share": 1.0
+  },
+  {
+   "month": "2023-04",
+   "reason": "Technical",
+   "share": 5.0
+  },
+  {
+   "month": "2023-04",
+   "reason": "Operations",
+   "share": 7.0
+  },
+  {
+   "month": "2023-05",
+   "reason": "Airport",
+   "share": 3.0
+  },
+  {
+   "month": "2023-05",
+   "reason": "Weather",
+   "share": 3.0
+  },
+  {
+   "month": "2023-05",
+   "reason": "Air traffic control",
+   "share": 6.0
+  },
+  {
+   "month": "2023-05",
+   "reason": "Miscellaneous",
+   "share": 0.0
+  },
+  {
+   "month": "2023-05",
+   "reason": "Reactionary (late incoming aircraft)",
+   "share": 71.0
+  },
+  {
+   "month": "2023-05",
+   "reason": "Passenger",
+   "share": 4.0
+  },
+  {
+   "month": "2023-05",
+   "reason": "Ramp",
+   "share": 2.0
+  },
+  {
+   "month": "2023-05",
+   "reason": "Technical",
+   "share": 6.0
+  },
+  {
+   "month": "2023-05",
+   "reason": "Operations",
+   "share": 5.0
+  },
+  {
+   "month": "2023-06",
+   "reason": "Airport",
+   "share": 3.0
+  },
+  {
+   "month": "2023-06",
+   "reason": "Weather",
+   "share": 4.0
+  },
+  {
+   "month": "2023-06",
+   "reason": "Air traffic control",
+   "share": 7.0
+  },
+  {
+   "month": "2023-06",
+   "reason": "Miscellaneous",
+   "share": 0.0
+  },
+  {
+   "month": "2023-06",
+   "reason": "Passenger",
+   "share": 3.0
+  },
+  {
+   "month": "2023-06",
+   "reason": "Reactionary (late incoming aircraft)",
+   "share": 68.0
+  },
+  {
+   "month": "2023-06",
+   "reason": "Ramp",
+   "share": 2.0
+  },
+  {
+   "month": "2023-06",
+   "reason": "Technical",
+   "share": 5.0
+  },
+  {
+   "month": "2023-06",
+   "reason": "Operations",
+   "share": 8.0
+  },
+  {
+   "month": "2023-07",
+   "reason": "Airport",
+   "share": 2.0
+  },
+  {
+   "month": "2023-07",
+   "reason": "Weather",
+   "share": 9.0
+  },
+  {
+   "month": "2023-07",
+   "reason": "Air traffic control",
+   "share": 9.0
+  },
+  {
+   "month": "2023-07",
+   "reason": "Miscellaneous",
+   "share": 0.0
+  },
+  {
+   "month": "2023-07",
+   "reason": "Passenger",
+   "share": 2.0
+  },
+  {
+   "month": "2023-07",
+   "reason": "Ramp",
+   "share": 1.0
+  },
+  {
+   "month": "2023-07",
+   "reason": "Technical",
+   "share": 4.0
+  },
+  {
+   "month": "2023-07",
+   "reason": "Reactionary (late incoming aircraft)",
+   "share": 65.0
+  },
+  {
+   "month": "2023-07",
+   "reason": "Operations",
+   "share": 8.0
+  },
+  {
+   "month": "2023-08",
+   "reason": "Airport",
+   "share": 3.0
+  },
+  {
+   "month": "2023-08",
+   "reason": "Weather",
+   "share": 3.0
+  },
+  {
+   "month": "2023-08",
+   "reason": "Air traffic control",
+   "share": 13.0
+  },
+  {
+   "month": "2023-08",
+   "reason": "Miscellaneous",
+   "share": 2.0
+  },
+  {
+   "month": "2023-08",
+   "reason": "Passenger",
+   "share": 3.0
+  },
+  {
+   "month": "2023-08",
+   "reason": "Ramp",
+   "share": 1.0
+  },
+  {
+   "month": "2023-08",
+   "reason": "Reactionary (late incoming aircraft)",
+   "share": 62.0
+  },
+  {
+   "month": "2023-08",
+   "reason": "Technical",
+   "share": 4.0
+  },
+  {
+   "month": "2023-08",
+   "reason": "Operations",
+   "share": 9.0
+  },
+  {
+   "month": "2023-09",
+   "reason": "Airport",
+   "share": 3.0
+  },
+  {
+   "month": "2023-09",
+   "reason": "Weather",
+   "share": 4.0
+  },
+  {
+   "month": "2023-09",
+   "reason": "Air traffic control",
+   "share": 13.0
+  },
+  {
+   "month": "2023-09",
+   "reason": "Miscellaneous",
+   "share": 0.0
+  },
+  {
+   "month": "2023-09",
+   "reason": "Passenger",
+   "share": 2.0
+  },
+  {
+   "month": "2023-09",
+   "reason": "Ramp",
+   "share": 1.0
+  },
+  {
+   "month": "2023-09",
+   "reason": "Reactionary (late incoming aircraft)",
+   "share": 67.0
+  },
+  {
+   "month": "2023-09",
+   "reason": "Technical",
+   "share": 3.0
+  },
+  {
+   "month": "2023-09",
+   "reason": "Operations",
+   "share": 7.0
+  },
+  {
+   "month": "2025-05",
+   "reason": "Airport",
+   "share": 2.0
+  },
+  {
+   "month": "2025-05",
+   "reason": "Weather",
+   "share": 4.0
+  },
+  {
+   "month": "2025-05",
+   "reason": "Air traffic control",
+   "share": 8.0
+  },
+  {
+   "month": "2025-05",
+   "reason": "Miscellaneous",
+   "share": 1.0
+  },
+  {
+   "month": "2025-05",
+   "reason": "Reactionary (late incoming aircraft)",
+   "share": 70.0
+  },
+  {
+   "month": "2025-05",
+   "reason": "Passenger",
+   "share": 3.0
+  },
+  {
+   "month": "2025-05",
+   "reason": "Ramp",
+   "share": 2.0
+  },
+  {
+   "month": "2025-05",
+   "reason": "Technical",
+   "share": 4.0
+  },
+  {
+   "month": "2025-05",
+   "reason": "Operations",
+   "share": 6.0
+  },
+  {
+   "month": "2025-10",
+   "reason": "Airport",
+   "share": 4.0
+  },
+  {
+   "month": "2025-10",
+   "reason": "Weather",
+   "share": 2.0
+  },
+  {
+   "month": "2025-10",
+   "reason": "Air traffic control",
+   "share": 12.0
+  },
+  {
+   "month": "2025-10",
+   "reason": "Miscellaneous",
+   "share": 4.0
+  },
+  {
+   "month": "2025-10",
+   "reason": "Passenger",
+   "share": 3.0
+  },
+  {
+   "month": "2025-10",
+   "reason": "Ramp",
+   "share": 1.0
+  },
+  {
+   "month": "2025-10",
+   "reason": "Reactionary (late incoming aircraft)",
+   "share": 63.0
+  },
+  {
+   "month": "2025-10",
+   "reason": "Technical",
+   "share": 5.0
+  },
+  {
+   "month": "2025-10",
+   "reason": "Operations",
+   "share": 6.0
+  },
+  {
+   "month": "2025-11",
+   "reason": "Airport",
+   "share": 1.0
+  },
+  {
+   "month": "2025-11",
+   "reason": "Weather",
+   "share": 1.0
+  },
+  {
+   "month": "2025-11",
+   "reason": "Air traffic control",
+   "share": 11.0
+  },
+  {
+   "month": "2025-11",
+   "reason": "Miscellaneous",
+   "share": 2.0
+  },
+  {
+   "month": "2025-11",
+   "reason": "Reactionary (late incoming aircraft)",
+   "share": 67.0
+  },
+  {
+   "month": "2025-11",
+   "reason": "Passenger",
+   "share": 3.0
+  },
+  {
+   "month": "2025-11",
+   "reason": "Ramp",
+   "share": 1.0
+  },
+  {
+   "month": "2025-11",
+   "reason": "Technical",
+   "share": 3.0
+  },
+  {
+   "month": "2025-11",
+   "reason": "Operations",
+   "share": 11.0
+  },
+  {
+   "month": "2026-04",
+   "reason": "Airport",
+   "share": 3.0
+  },
+  {
+   "month": "2026-04",
+   "reason": "Weather",
+   "share": 3.0
+  },
+  {
+   "month": "2026-04",
+   "reason": "Air traffic control",
+   "share": 6.0
+  },
+  {
+   "month": "2026-04",
+   "reason": "Reactionary (late incoming aircraft)",
+   "share": 69.0
+  },
+  {
+   "month": "2026-04",
+   "reason": "Miscellaneous",
+   "share": 2.0
+  },
+  {
+   "month": "2026-04",
+   "reason": "Passenger",
+   "share": 3.0
+  },
+  {
+   "month": "2026-04",
+   "reason": "Ramp",
+   "share": 1.0
+  },
+  {
+   "month": "2026-04",
+   "reason": "Technical",
+   "share": 5.0
+  },
+  {
+   "month": "2026-04",
+   "reason": "Operations",
+   "share": 8.0
+  }
+ ]
+}
